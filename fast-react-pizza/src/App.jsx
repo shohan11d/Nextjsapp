@@ -4,14 +4,14 @@ import Menu, { loader as MenuLoader } from './features/Menu/Menu';
 import './index.css';
 import Cart from './features/cart/Cart';
 import CreateOrder from './features/order/CreateOrder';
-import Order from './features/order/Order';
+import Order, { loader as OrderLoader } from './features/order/Order';
 import AppLayout from './ui/AppLayout';
 import Error from './ui/Error';
 
 const router = createBrowserRouter([
    {
       element: <AppLayout />,
-      errorElement: <Error/>,
+      errorElement: <Error />,
       children: [
          {
             path: '/',
@@ -25,7 +25,12 @@ const router = createBrowserRouter([
          },
          { path: '/cart', element: <Cart /> },
          { path: '/order/new', element: <CreateOrder /> },
-         { path: '/order/:id', element: <Order /> },
+         {
+            path: '/order/:orderId',
+            element: <Order />,
+            loader: OrderLoader,
+            errorElement: <Error />,
+         },
       ],
    },
 ]);
