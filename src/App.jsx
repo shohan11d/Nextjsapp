@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Menu from './components/Menu';
 import Order from './components/Order';
 import PizzaMenu from './components/PizzaMenu';
+import Cart from './components/Cart';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/order',
         element: <Order />,
+      },
+      {
+        path: '/cart',
+        element: <Cart />,
       },
     ],
   },

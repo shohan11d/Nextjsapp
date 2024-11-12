@@ -6,14 +6,19 @@ function AppLayout() {
     <div className="border">
       <header className="bg-blue-600 p-5 text-white">
         <div className="flex justify-between">
-          <p>Logo</p>
           <Link to="/">
-            <p>Fast-react-Pizza</p>
+            <p>Logo</p>
           </Link>
+          <input
+            class="rounded-md border px-3 py-1 text-neutral-500"
+            type="text"
+            placeholder="Search Order"
+          />
+          <p>Fast-react-pizza</p>
         </div>
       </header>
       <Menu />
-      <main className="bg-green-600 p-10">
+      <main className="bg-green-600 p-5">
         <Outlet />
       </main>
 
