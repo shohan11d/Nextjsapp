@@ -4,13 +4,13 @@ import Menu from './Menu';
 function AppLayout() {
   return (
     <div className="border">
-      <header className="bg-blue-600 p-5 text-white">
+      <header className="bg-blue-600 p-5 text-white ">
         <div className="flex justify-between">
           <Link to="/">
             <p>Logo</p>
           </Link>
           <input
-            class="rounded-md border px-3 py-1 text-neutral-500"
+            class="rounded-md border px-3 py-1 text-neutral-500 hover:border-teal-700"
             type="text"
             placeholder="Search Order"
           />

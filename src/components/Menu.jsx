@@ -16,7 +16,7 @@ function Menu() {
         Order
       </Link>
       <Link
-        className="rounded-full bg-green-600 px-4  py-1 hover:bg-yellow-400"
+        className="rounded-full bg-green-600 px-4 py-1 hover:bg-yellow-400 "
         to="/pizzamenu"
       >
         PizzaMenu
