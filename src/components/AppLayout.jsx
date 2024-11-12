@@ -7,7 +7,9 @@ function AppLayout() {
       <header className="bg-blue-600 p-5 text-white">
         <div className="flex justify-between">
           <p>Logo</p>
-          <p>Fast-react-Pizza</p>
+          <Link to="/">
+            <p>Fast-react-Pizza</p>
+          </Link>
         </div>
       </header>
       <Menu />
