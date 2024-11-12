@@ -4,6 +4,7 @@ import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import Menu from './components/Menu';
 import Order from './components/Order';
+import PizzaMenu from './components/PizzaMenu';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: '/home',
         element: <Home />,
+      },
+      {
+        path: '/pizzamenu',
+        element: <PizzaMenu />,
       },
       {
         path: '/menu',
