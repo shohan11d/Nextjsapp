@@ -2,7 +2,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AppLayout from './components/AppLayout';
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
-import Menu from './components/Menu';
+import Menu from './components/NavMenu';
+import { loader as pizzaMenuLoader } from './components/PizzaMenu';
 import Order from './components/Order';
 import PizzaMenu from './components/PizzaMenu';
 import Cart from './components/Cart';
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       {
         path: '/pizzamenu',
         element: <PizzaMenu />,
+        loader: pizzaMenuLoader,
       },
       {
         path: '/menu',

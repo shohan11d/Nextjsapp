@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import Menu from './Menu';
+import Menu from './NavMenu';
 function AppLayout() {
   return (
     <div className="border">
@@ -18,7 +18,7 @@ function AppLayout() {
         </div>
       </header>
       <Menu />
-      <main className="bg-green-600 p-5">
+      <main className=" px-5">
         <Outlet />
       </main>
 

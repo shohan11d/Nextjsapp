@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+
 function Menu() {
   return (
     <div className="flex list-none gap-5 p-4">
@@ -30,5 +31,6 @@ function Menu() {
     </div>
   );
 }
+
 
 export default Menu;
