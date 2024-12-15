@@ -1,15 +1,20 @@
-import Logo from './components/Logo';
-import Navigation from './components/Navigation';
-
+import Logo from './_components/Logo';
+import Navigation from './_components/Navigation';
+import { Josefin_Sans } from 'next/font/google';
+const josfin = Josefin_Sans({ subsets: ['latin'], display: 'swap' });
+console.log(josfin);
+import './_styles/globals.css';
 export const metadata = {
-   title: 'The Wild Oasis',
-   description: 'Welcome to paradise.',
+   title: {
+      template: '%s The Wild Oasis',
+      default: 'Welcome / The Wild Oasis',
+   },
 };
 
 export default function RootLayout({ children }) {
    return (
       <html lang="en">
-         <body>
+         <body className="bg-primary-950 text-primary-100">
             <header>
                <Logo />
             </header>
